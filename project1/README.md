@@ -1,6 +1,6 @@
-# Proejct 1: Extracting IP Addresses From a File
+# Proejct 1: Math with Speech Output
 
-The purpose of this program is to take an input file and output all IP addresses found in the file.
+This program will ask the user for two numbers. Once the user enters two integers then it will add them together and read the output aloud.
 
 # Usage:
 
