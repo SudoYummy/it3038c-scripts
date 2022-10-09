@@ -5,6 +5,6 @@ This program will ask the user for two numbers. Once the user enters two integer
 # Usage:
 
 ```
-./ipsearch file.txt
+.\mathspeech.ps1
 
 ```
