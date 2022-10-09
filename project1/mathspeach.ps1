@@ -10,5 +10,5 @@ $num1 = Read-Host -Prompt "Enter first number"
 $num2 = Read-Host -Prompt "Enter second number"
 $answer = [int]$num1 + [int]$num2
 
-$speak.Speak("$num1 + $num2 = $answer")
 Write-Host("$num1 + $num2 = $answer")
+$speak.Speak("$num1 + $num2 = $answer")
