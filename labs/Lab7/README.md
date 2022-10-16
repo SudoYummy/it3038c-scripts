@@ -21,6 +21,7 @@ image = Image.open("corgi.jpg")
 ```
 Simply run in Lab7 folder by typing <b>python .\lab7.py</b>
 
+Each image should automatically open and display the changes to it. Be sure to close the image tabs or the program won't quit.
 ### Sources
 https://pillow.readthedocs.io/en/stable/index.html
 
