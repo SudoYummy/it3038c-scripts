@@ -10,7 +10,7 @@ blurredimage.show()
 
 #making image greyscale
 greyscaleimage = image.convert('L')
-
+greyscaleimage.show()
 
 #creating a half and half image
 ##creating new image
