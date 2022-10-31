@@ -1,3 +1,5 @@
+#This will pull all players that are in the NFL that went to college that started with an 'O'
+
 from urllib import request
 from bs4 import BeautifulSoup
 import requests, re
