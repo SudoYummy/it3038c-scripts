@@ -14,6 +14,5 @@ for player in table:
     for n in name:
         output.append((re.compile('>(.+)<').findall(str(n))))
         
-
 for entry in output:
     print(entry)
