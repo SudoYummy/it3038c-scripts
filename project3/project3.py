@@ -1,7 +1,6 @@
 import requests
 import config
 from flask import Flask
-from routes import app
 #Sources
 ##How to hide API Key: https://medium.com/black-tech-diva/hide-your-api-keys-7635e181a06c
 ##VirusTotal API docs: https://developers.virustotal.com/reference/ip-info
