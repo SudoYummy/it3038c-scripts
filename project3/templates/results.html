@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
 <h3>Results:</h3>
-<p>IP Address: {{ submission }}</p>
+<p>IP Address: {{ webip }}</p>
+<p>Count of malicious entries: {{ webmal }}<br>
+    Count of suspicious entries: {{ websus }}<br>
+    Count of undetected entries: {{ webund }}<br>
+    Count of harmless entries: {{ webharm}}
+</p>
+<h3>Final verdict: {{ webmal }}/{{ webtotal }}</h3>
 {% endblock %}

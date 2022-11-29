@@ -19,7 +19,7 @@ def results():
     #This makes the request to VirusTotal. The entered ipaddress is used for the URL
     #ipvalue holds the entered IP address
     ipvalue=request.form['data']
-    #making sure value entered was IP address
+    #making sure value entered was an IP address
     def ipv4(string):
         try:
             ipaddress.IPv4Network(string)
@@ -45,4 +45,11 @@ def results():
         if jsondata['data']['attributes']['tags'][0] == 'private':
             return "This is a private IP address. This cannot be searched with VirusTotal. Please return to homepage and enter a public IP."
     except:
-        return render_template("results.html", submission=jsondata)
+        #These are values sent to the html page
+        ipaddressvalue = jsondata['data']['id']
+        malicious = jsondata['data']['attributes']['last_analysis_stats']['malicious']
+        harmless = jsondata['data']['attributes']['last_analysis_stats']['harmless']
+        suspicious = jsondata['data']['attributes']['last_analysis_stats']['suspicious']
+        undetected = jsondata['data']['attributes']['last_analysis_stats']['undetected']
+        total = int(malicious) + int(harmless) + int(suspicious) + int(undetected)
+        return render_template("results.html", webip=ipaddressvalue, webmal=malicious, webharm=harmless, websus=suspicious, webund=undetected, webtotal = total)
